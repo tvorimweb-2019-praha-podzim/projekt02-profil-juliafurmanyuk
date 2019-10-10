@@ -1,6 +1,12 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html { 
+  box-sizing: border-box; 
+}
+*, 
+::after, 
+::before { 
+  box-sizing: inherit; 
+}
 
 /*
  BARVY
@@ -16,4 +22,88 @@ html { box-sizing: border-box; }
 
 body {
     background-color: #bdc3c7;
+    width: 250px;
+    margin: 0;
+}
+
+.card{
+  width: 250px;
+  box-shadow: 5px 5px 5px #31363b;
+}
+
+.picture img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.logo{
+  position: absolute;
+  color: #b92e81;
+  display: none;
+}
+
+header{
+  background-image: url(/Users/julia/Documents/GitHub/projekt02-profil-juliafurmanyuk/images/foto.jpg);
+  display: block;
+}
+
+.obsah{
+  padding: 40px 15px;
+  background-color: #31363b;
+}
+
+p{
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #bdc3c7;
+  padding: 5%;
+  padding-top: 0%;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 25px;
+  padding-left: 5%;
+  margin: 0;
+}
+
+.reference{
+  width: 100%;
+}
+
+.portfolio-link, .facebook-link, .twitter-link{
+  display: block;
+  border-top: 1px solid #bdc3c7;
+  padding: 10px 0;
+  color: #bdc3c7;
+  background: #31363b;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.portfolio-link: hover{
+  background: #e74c3c;
+  width: 100%;
+}
+
+.socials{
+  width: 100%;
+  display: flex;
+  background-color: #bdc3c7;
+}
+
+.facebook-link: hover{
+  background: #3b5998;
+}
+
+.twitter-link: hover{
+  background: #1da1f2;
+}
+
+.facebook-link + .twitter-link{
+  border-left: 1px solid #31363b;
 }
