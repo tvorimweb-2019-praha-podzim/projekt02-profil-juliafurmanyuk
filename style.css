@@ -27,6 +27,7 @@ body {
 }
 
 .card{
+  background-color: #31363b;
   width: 250px;
   box-shadow: 5px 5px 5px #31363b;
 }
@@ -70,19 +71,17 @@ h1{
 
 .reference{
   width: 100%;
-}
-
-.portfolio-link, .facebook-link, .twitter-link{
-  display: block;
-  border-top: 1px solid #bdc3c7;
-  padding: 10px 0;
-  color: #bdc3c7;
+  display: inline-block;
+  border-top: 1px;
+  border-bottom: 1px;
+  padding: 10px;
   background: #31363b;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  color: #bdc3c7;
 }
 
 .portfolio-link: hover{
@@ -92,16 +91,19 @@ h1{
 
 .socials{
   width: 100%;
-  display: flex;
-  background-color: #bdc3c7;
+  margin: 1px;
+  display: inline-block;
+  color: #bdc3c7;
 }
 
 .facebook-link: hover{
   background: #3b5998;
+  padding: 10px;
 }
 
 .twitter-link: hover{
   background: #1da1f2;
+  padding: 10px;
 }
 
 .facebook-link + .twitter-link{
