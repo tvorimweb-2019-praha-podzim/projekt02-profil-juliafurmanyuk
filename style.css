@@ -69,43 +69,56 @@ h1{
   margin: 0;
 }
 
-.reference{
-  width: 100%;
-  display: inline-block;
-  border-top: 1px;
-  border-bottom: 1px;
-  padding: 10px;
-  background: #31363b;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
+.odkazy{
+  width: 250px;
+  padding: 0;
+  margin: 0;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
   text-align: center;
   text-transform: uppercase;
-  color: #bdc3c7;
+  box-shadow: 5px 5px 5px #31363b;
+  background-color: #31363b;
 }
 
-.portfolio-link: hover{
-  background: #e74c3c;
-  width: 100%;
-}
-
-.socials{
-  width: 100%;
-  margin: 1px;
+.odkazy li{
   display: inline-block;
+  color: #31363b;
+}
+
+.odkazy a{
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
   color: #bdc3c7;
 }
 
-.facebook-link: hover{
-  background: #3b5998;
-  padding: 10px;
+.portfolio{
+  width: 100%;
+  text-align: center;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #3f464d;
 }
 
-.twitter-link: hover{
+.facebook, .twitter{
+  width: 50%;
+  text-align: center;
+  display: block;
+  border-top-style:solid;
+  border-top-width: 1px;
+  border-top-color: #3f464d;
+}
+
+.portfolio:hover{
+  background-color: #e74c3c;
+}
+
+.facebook:hover{
+  background-color: #3b5998;
+}
+
+.twitter:hover{
   background: #1da1f2;
-  padding: 10px;
-}
-
-.facebook-link + .twitter-link{
-  border-left: 1px solid #31363b;
 }
